@@ -1,64 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder ="enter your full name">
 
-<h3>Please enter your personal details:</h3>
+    <br>
 
-<form>
+    <input type="password" placeholder ="password">
+    <br>
+    <input type="email" placeholder ="email">
+    <br>
+    <input type="number" placeholder ="number">
+    <br>
+    <input type="time" >
+    <br>
+    <input type="date" placeholder >
+    <br>
+    <input type="url" placeholder ="URL" >
+    <br>
+    <input type="color" >
+    <br>
+    <input type="file" accept ="jpg" >
+    <br>
+    <input type="submit" value="Submit">
 
-<table>
 
-<tr>
-    <td><label>First name:*</label></td>
-    <td><input type="text"></td>
-</tr>
+    <select name="Ayush" id="2ies23cse024">
+        <option value="">--Select anything--</option>
+        <option value="Ayush">Ayush</option>
+        <option value="Bhanu">Bhanu</option>
+        <option value="Devendra">Devendra</option>
+        <option value="Ankush">Ankush</option>  
+    </select>
 
-<tr>
-    <td><label>Last name:*</label></td>
-    <td><input type="text"></td>
-</tr>
+    <br>
+    <select name="Ayush" id="2ies23cse024">
+        <option value="">--Select course--</option>
+        <optgroup label ="b.tech">
+            <option value="cse">CSE</option>
+            <option value="civil">Civil</option>
+            <option value="mechanical">Mechanical</option>
+        </optgroup>
+    </select>
 
-<tr>
-    <td><label>Street address:</label></td>
-    <td><input type="text" size="40"></td>
-</tr>
+    <hr>
 
-<tr>
-    <td><label>Town/city:</label></td>
-    <td><input type="text"></td>
-</tr>
+    <textarea  name="address" id="address" placeholder="add your address" >  
+    </textarea>
 
-<tr>
-    <td><label>Postcode/zip:</label></td>
-    <td><input type="text"></td>
-</tr>
+    <hr>
 
-<tr>
-    <td><label>Telephone:</label></td>
-    <td><input type="text"></td>
-</tr>
+    <button type="submit">click</button>    
 
-<tr>
-    <td><label>Mobile:</label></td>
-    <td><input type="text"></td>
-</tr>
+    <br>
 
-<tr>
-    <td><label>Email address:*</label></td>
-    <td><input type="email" size="40"></td>
-</tr>
+    <label for="Gender">Gender</label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
 
-</table>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
 
-<center>
-<p>Fields marked * are required.</p>
-<input type="submit" value="Submit">
-</center>
+    
+    <input type="radio" name="gender" id="Other" value="Other">
+    <label for="Other">Other</label>
 
-</form>
+    <br>
+
+    <caption>This is form</caption>
+    <br>
+
+     <label for="Gender">Gender</label>
+    <input type="checkbox" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+
+    <input type="checkbox" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+
+    
+    <input type="checkbox" name="gender" id="Other" value="Other">
+    <label for="Other">Other</label>
+
+
+    
+
+    
+
+
+
 
 </body>
 </html>
