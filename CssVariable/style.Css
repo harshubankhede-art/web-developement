@@ -37,3 +37,22 @@ td
 {
     color: blue;
 }
+@media screen and(max-width:1024) 
+{
+   #leftPart
+   {
+    grid-template-columns: auto auto auto;
+   } 
+}@media screen and(max-width:760) 
+{
+   #leftPart
+   {
+    grid-template-columns: auto auto auto;
+   } 
+}@media screen and(max-width:420) 
+{
+   #leftPart
+   {
+    grid-template-columns: auto auto auto;
+   } 
+}

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#Navbar {
+  background-color: rgb(180, 180, 236);
+  display: flex;
+  justify-content: space-between;
+  color: rgb(8, 0, 255);
+  padding: 8px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
+}
+
+.NavLinks {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  span,
+  p,
+  button {
+    cursor: pointer;
+  }
+
+  button {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+  }
+}
+
+div {
+  border: 1px solid #000;
+}
+
+#outerDiv {
+  display: flex;
+}
+
+#leftPart {
+  height: fit-content;
+  width: 70%;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+}
+
+#rightPart {
+    background-color: rgb(249, 142, 142);
+  height: 85vh;
+  padding: 20px;
+  width: 30%;
+
+  ol {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #leftPart {
+    grid-template-columns: auto auto auto;
+  }
+
+  #rightPart{
+    background-color: rgb(203, 250, 134);
+  }
+}
+@media screen and (max-width: 760px) {
+  #leftPart {
+    grid-template-columns: auto auto auto;
+  }
+
+  #rightPart{
+    background-color: rgb(156, 156, 247);
+  }
+}
+@media screen and (max-width: 420px) {
+  #leftPart {
+    grid-template-columns: auto;
+  }
+
+  #rightPart{
+    background-color: rgb(244, 212, 153)
+  }
+}
