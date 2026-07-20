@@ -1,6 +1,7 @@
 
 import User from "../models/auth.model.js";
 import bcrypt from "bcrypt";
+import { genToken } from "../utils/auth.servic.js";
 export const registerUser = async (req,res,next) => {
     try{
         const {fullName,email,password,phone,gender,dob} = req.body;
@@ -60,6 +61,8 @@ export const loginUser = async(req,res,next) => {
         error.statusCode = 400;
         return next(error);
     }
+
+    await genToken(existingUser,res);
     
     return res.status(200).json({
         message:"login Successfully"
